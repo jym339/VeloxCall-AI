@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Building, 
-  MapPin, 
   Mail, 
   ShieldCheck, 
   Sparkles, 
@@ -91,7 +90,7 @@ export default function Footer({ onOpenTrial, onOpenScheduler, onOpenPrivacy, on
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-slate-900 text-left">
           
           {/* Column 1: Brand details */}
-          <div className="md:col-span-5 space-y-4">
+          <div className="md:col-span-8 space-y-4">
             <div className="flex items-center gap-2">
               <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-orange-500 text-white font-mono font-bold text-sm tracking-tighter">
                 V
@@ -113,32 +112,12 @@ export default function Footer({ onOpenTrial, onOpenScheduler, onOpenPrivacy, on
           </div>
 
           {/* Column 2: Navigation shortcuts */}
-          <div className="md:col-span-3 space-y-3.5">
+          <div className="md:col-span-4 space-y-3.5">
             <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest font-mono">NAVIGATION & LINKS</h4>
             <div className="grid grid-cols-1 gap-2 text-xs font-sans">
               <a href="#how-it-works" className="text-slate-400 hover:text-orange-400 transition-colors">How We Help</a>
-              <a href="#pricing" className="text-slate-400 hover:text-orange-400 transition-colors font-semibold">Tiers & Pricing</a>
+              <a href="#pricing" className="text-slate-400 hover:text-orange-400 transition-colors font-semibold font-sans">Tiers & Pricing</a>
               <button onClick={onOpenScheduler} className="text-slate-400 hover:text-orange-400 transition-colors text-left cursor-pointer">Schedule 10m Call Info</button>
-            </div>
-          </div>
-
-          {/* Column 3: Contact & Support */}
-          <div className="md:col-span-4 space-y-3.5">
-            <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest font-mono">CANADA SUPPORT OFFICE</h4>
-            <div className="space-y-3 text-xs font-sans text-slate-400">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-slate-600 shrink-0" />
-                <span>Headquarters: Vancouver, BC, Canada</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-slate-600 shrink-0" />
-                <span>
-                  Support inquiries:{' '}
-                  <a href="mailto:john.doe@gmail.com" className="text-orange-400 hover:underline">
-                    john.doe@gmail.com
-                  </a>
-                </span>
-              </div>
             </div>
           </div>
 

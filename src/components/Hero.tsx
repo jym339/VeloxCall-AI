@@ -86,33 +86,9 @@ export default function Hero({ onSeeLossClick, onTryFreeClick }: HeroProps) {
                 </div>
               </div>
             </div>
- 
+
             {/* Highly Polished TRUST PLACEHOLDERS */}
             <div className="pt-5 mt-6 flex flex-wrap items-center gap-6 border-t border-slate-200/50">
-              {/* BBB Placeholder */}
-              <div className="flex items-center gap-2.5 bg-slate-50 p-2 rounded-2xl border border-slate-200 shadow-3xs">
-                <div className="flex items-center justify-center w-9 h-9 bg-white border border-slate-200/85 rounded-xl text-slate-850 font-sans font-bold text-xs">
-                  <span className="text-white px-1 py-0.5 rounded bg-blue-600 text-[8px] uppercase tracking-wider font-extrabold font-mono">BBB</span>
-                </div>
-                <div>
-                  <div className="text-[8px] text-slate-400 font-mono font-bold leading-none uppercase tracking-wider">ACCREDITED</div>
-                  <div className="text-xs font-bold text-slate-800 mt-0.5">A+ Rated Business</div>
-                </div>
-              </div>
- 
-              {/* Google Reviews Placeholder */}
-              <div className="flex items-center gap-2.5 bg-slate-50 p-2 rounded-2xl border border-slate-200 shadow-3xs">
-                <div className="flex items-center justify-center w-9 h-9 bg-amber-500/10 border border-amber-200/30 rounded-xl text-amber-605 font-extrabold text-sm font-sans">
-                  G
-                </div>
-                <div>
-                   <div className="flex gap-0.5 text-amber-500 text-[10px]">
-                    {'★'.repeat(5)}
-                  </div>
-                  <div className="text-xs font-bold text-slate-800 mt-0.5">4.9/5 (120+ Reviews)</div>
-                </div>
-              </div>
- 
               {/* Secure Shield Placeholder */}
               <div className="flex items-center gap-2.5 bg-slate-50 p-2 rounded-2xl border border-slate-200 shadow-3xs">
                 <div className="flex items-center justify-center w-9 h-9 bg-blue-50 border border-blue-105 rounded-xl text-blue-600 text-sm">
@@ -124,7 +100,7 @@ export default function Hero({ onSeeLossClick, onTryFreeClick }: HeroProps) {
                 </div>
               </div>
             </div>
- 
+
           </div>
  
           {/* Hero Right Visual Column - Safe, Clean Value Card - Bento Card */}

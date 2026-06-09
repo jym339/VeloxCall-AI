@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import ProblemStats from './components/ProblemStats';
 import HowItWorks from './components/HowItWorks';
 import Pricing from './components/Pricing';
-import DemoScheduler from './components/DemoScheduler';
 import TrialSignupModal from './components/TrialSignupModal';
 import Footer from './components/Footer';
 import LegalModal from './components/LegalModal';
@@ -76,7 +75,7 @@ export default function App() {
                 Tiers & Pricing
               </button>
               <button 
-                onClick={() => scrollToSection('scheduler')} 
+                onClick={() => window.open("https://calendly.com/booknow12/consultation-veloxcall", "_blank", "noopener,noreferrer")} 
                 className="text-slate-650 hover:text-blue-600 transition-all font-sans font-semibold cursor-pointer flex items-center gap-1.5"
               >
                 <Calendar className="w-3.5 h-3.5 text-blue-600" />
@@ -114,7 +113,13 @@ export default function App() {
             <div className="flex flex-col gap-3 text-sm font-semibold">
               <button onClick={() => scrollToSection('how-it-works')} className="text-slate-655 hover:text-blue-600 py-1 text-left">How We Help</button>
               <button onClick={() => scrollToSection('pricing')} className="text-slate-655 hover:text-blue-600 py-1 text-left">Plans & Pricing</button>
-              <button onClick={() => scrollToSection('scheduler')} className="text-slate-655 hover:text-blue-600 py-1 flex items-center gap-1.5">
+              <button 
+                onClick={() => {
+                  window.open("https://calendly.com/booknow12/consultation-veloxcall", "_blank", "noopener,noreferrer");
+                  setMobileMenuOpen(false);
+                }} 
+                className="text-slate-655 hover:text-blue-600 py-1 flex items-center gap-1.5"
+              >
                 <Calendar className="w-4 h-4 text-blue-600" />
                 Book Strategy Session
               </button>
@@ -149,15 +154,12 @@ export default function App() {
         {/* SECTION VII: pricing tables config with faq accordion */}
         <Pricing onPlanClick={(planName) => triggerTrialModal(planName)} />
 
-        {/* SECTION VIII: Timezone booking interactive calendar */}
-        <DemoScheduler />
-
       </main>
 
       {/* 4. FOOTER COMPONENT */}
       <Footer 
         onOpenTrial={() => triggerTrialModal('Growth Choice')}
-        onOpenScheduler={() => scrollToSection('scheduler')}
+        onOpenScheduler={() => window.open("https://calendly.com/booknow12/consultation-veloxcall", "_blank", "noopener,noreferrer")}
         onOpenPrivacy={() => openLegalModal('privacy')}
         onOpenSLA={() => openLegalModal('sla')}
       />
