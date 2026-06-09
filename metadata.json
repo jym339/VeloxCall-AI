@@ -1,0 +1,6 @@
+{
+  "name": "VeloxCall AI",
+  "description": "High-converting landing page for VeloxCall AI, an automated 60-second lead callback AI voice agent for Canadian emergency restoration companies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
